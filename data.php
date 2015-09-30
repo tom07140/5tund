@@ -1,1 +1,4 @@
-//data
+<?php
+	// data.php
+
+?>
