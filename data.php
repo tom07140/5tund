@@ -48,8 +48,16 @@
 					
 					// kasutaja loomise funktsioon, failist functions.php
 					// saadame kaasa muutujad
-					addCarPlate($number_plate, $color);
+					$message = addCarPlate($number_plate, $color);
 					
+					if($message != ""){
+						// õnnestus, teeme inputi väljad tühjaks
+						$number_plate = "";
+						$color = "";
+						
+						echo $message;
+						
+					}
 				}
 	}
 	
